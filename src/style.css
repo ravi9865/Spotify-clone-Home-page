@@ -1,0 +1,457 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#root{
+    width: 100vw;
+    height: 100vh;    
+}
+body {
+    background-color: #000000;
+    color: whitesmoke;
+}
+
+section {
+    width: 100%;
+    display: flex;
+}
+
+
+.home {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    /* height: 88vh; */
+    width: 35rem;
+    margin: 0.3rem;
+    /* border: 2px solid red; */
+
+}
+
+.scroll-library {
+    width: 100%;
+    /* height: 32vh; */
+    overflow-x: scroll;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    margin-bottom: 6rem;
+    /* border: 2px solid red; */
+}
+
+.home-div {
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 3rem;
+    border-radius: 0.9rem;
+    justify-content: center;
+    height: 140px;
+}
+
+a {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.gap {
+    padding: 0.4rem 2.2rem 0rem 1rem;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.library-div {
+    background-color: #121212;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.9rem;
+    padding-bottom: 2rem;
+}
+.library-div-icons{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 2rem 1rem;
+    color: #a1a1a1;
+}
+.text-library-heading {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.gap-library {
+    font-size: 1.4rem;
+}
+
+.create-playlists {
+    width: 94%;
+    margin: 0.6rem;
+    background-color: #242424;
+    color: whitesmoke;
+    padding: 1.1rem;
+    border-radius: 0.7rem;
+    line-height: 2rem;
+}
+
+.create-playlists h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.create-playlists p {
+    font-size: 0.9rem;
+    font-weight: 400;
+
+}
+
+.create-playlists button {
+    margin-left: 1rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-align: center;
+    background-color: #fff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5rem;
+    border: none;
+    outline: none;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.create-playlists button:hover {
+    transform: scale(1.04);
+}
+
+.privacy-items {
+    /* margin-top: 8rem; */
+    width: 90%;
+    display: flex;
+    gap: 0.7rem;
+    flex-wrap: wrap;
+    padding: 1.3rem;
+}
+
+.privacy-items span {
+    font-size: 0.9rem;
+}
+
+.privacy-items a {
+    width: 100%;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.privacy-items a:hover {
+    text-decoration: underline;
+}
+
+.library-div>button {
+    margin-left: 2.1rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    background-color: #121212;
+    color: #ffff;
+    font-size: 0.8rem;
+    transform: translate3d(0px, 0px, 0px);
+
+}
+
+.library-div>button:hover {
+    transform: scale(1.04);
+}
+
+.gap-i {
+    padding-right: 0.5rem;
+}
+
+.content {
+    width: 94%;
+    /* padding: 0.4rem; */
+    height: 100%;
+    margin-top: 0.4rem;
+    /* border: 2px solid red; */
+}
+
+.login {
+    display: flex;
+    /* gap: 2rem; */
+    height: 4rem;
+    background-color: #101010;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 1rem; */
+    border-top-right-radius: 0.4rem;
+    border-top-left-radius: 0.4rem;
+    color: transparent;
+}
+
+.brackets-login {
+    display: flex;
+    gap: 1rem;
+}
+
+.brackets-login i {
+    border-radius: 50%;
+    background-color: #000000cf;
+    padding: 0.5rem;
+}
+.menu-login {
+    display: none;
+    width: 40px;
+    height: 40px;
+}
+.login-button{
+    display: flex;
+    /* gap: 0.4rem; */
+}
+.brackets-login i:hover {
+    opacity: 0.5;
+}
+
+.active-sign-btn {
+    font-size: 1.2rem;
+    margin: 0.6rem;
+    background-color: #101010;
+    color: #939191;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.active-sign-btn:hover {
+    transform: scale(1.14);
+}
+
+.active-login-btn {
+    font-size: 1.2rem;
+    margin: 0.6rem;
+    padding: 0.5rem 1.5rem;
+    background-color: white;
+    color: #1c1c1c;
+    font-weight: 600;
+    border: 1px solid whitesmoke;
+    outline: none;
+    transform: translate3d(0px, 0px, 0px);
+    border-radius: 500px;
+}
+
+.active-login-btn:hover {
+    transform: scale(1.14);
+}
+
+.content-div {
+    width: 100%;
+    height: 47.6rem;
+    overflow-x: scroll;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.focus {
+    width: 100%;
+    /* margin-top: 0.3rem; */
+    background-color: #1D1D1D;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    /* gap: 2rem; */
+    justify-content: space-around;
+    align-items: center;
+}
+
+.focus h1 {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0.5rem 0 0.5rem 1rem;
+}
+
+.focus a {
+    position: absolute;
+    top: 1rem;
+    right: 3rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.focus a:hover {
+    opacity: 0.9;
+    text-decoration: underline;
+}
+.cards{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    
+    justify-content: space-around;
+}
+.card {
+    background-image: linear-gradient(to top right,#272727, #050505);
+    width: 13%;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.card:hover {
+    opacity: 0.6;
+}
+
+.card img {
+    width: 100%;
+    height: 10.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0.8rem;
+    padding: 0.5rem;
+}
+
+.card h3 {
+    margin: 0.3rem 0.6rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.card p {
+    margin: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    word-spacing: 0.3rem;
+}
+
+.play-btn {
+    /* display: none; */
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    bottom: 95px;
+    right: 5px;
+    padding: 0.6rem 0.5rem;
+    border-radius: 50%;
+    background-color: #1fdf64;
+    outline: none;
+    border: none;
+    transform: translate3d(0px, 0px, 0px);
+    text-align: center;
+}
+
+.play-btn:hover {
+    /* display: block; */
+    transform: scale(1.14);
+}
+
+
+/* sign up work */
+.sign-up-article {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* flex-wrap: nowrap; */
+    background-image: linear-gradient(to top right, #AD2A98, #519AF4);
+    padding: 0.7rem;
+    margin: 0.3rem;
+}
+
+.sign-up-article a {
+    text-decoration: none;
+}
+
+.sign-up-article p {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.sign-up-article h1 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.sign-up-article button {
+    border-radius: 500px;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: #F6F6F6;
+    transform: matrix3d(0 0 0);
+    padding: 0.9rem 2rem;
+}
+
+.sign-up-article button:hover {
+    transform: scale(1.04);
+}
+.footer-div-row{
+    padding: 4rem 2rem 1rem 2rem;
+    background-color: #1D1D1D;
+}
+.first-row{
+    display: flex;
+    margin: 5.4rem 1rem;
+    justify-content: space-between;
+
+}
+.item-column{
+    display: flex;
+    flex-direction: row;
+    margin-left: 3.5rem;
+    gap: 4rem;
+    justify-content: space-evenly;
+}
+.company-text{
+    /* margin-right: 3rem; */
+    display: flex;
+    flex-direction: column;
+}
+.company-text h2{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.company-text a{
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-left: 0.5rem;
+}
+.company-text a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.column-icons{
+    display: flex;
+    gap: 0.5rem;
+}
+.column-icons img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #333333;
+}
+.first-img-insta{
+    padding: 3px;
+}
+.first-img-twitter{
+    padding: 4px;
+}
+.column-icons img:hover{
+    background-color: #727272;
+    opacity: 0.6;
+}
+.line{
+    background-color: rgb(77, 75, 75);
+    width: 95%;
+    height: 1px;
+    margin-left: 2.4rem;
+    
+}
+.second-row p{
+    background-color: #1D1D1D;
+    text-align: center;
+    padding: 1.5rem;
+}

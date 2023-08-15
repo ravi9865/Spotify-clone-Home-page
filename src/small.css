@@ -1,0 +1,10 @@
+@media screen and (min-width:300px) and (max-width:798px){
+    .adv-login{
+        display: none;
+    }
+    .view-content{
+        display: none;
+    }
+}
+
+    
